@@ -29,7 +29,9 @@ export default function CatalogPage() {
   };
 
   useEffect(() => {
-    setAllCars([]);
+    if (page === 1) {
+      setAllCars([]);
+    }
   }, [page]);
 
   useEffect(() => {
